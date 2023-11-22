@@ -1,0 +1,107 @@
+[13:17:14] [ServerMain/INFO]: Environment: Environment[accountsHost=https://api.mojang.com, sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[13:17:14] [ServerMain/INFO]: Found new data pack file/bukkit, loading it automatically
+[13:17:16] [ServerMain/INFO]: Loaded 7 recipes
+[13:17:17] [Server thread/INFO]: Starting minecraft server version 1.20.2
+[13:17:17] [Server thread/INFO]: Loading properties
+[13:17:18] [Server thread/INFO]: This server is running Paper version git-Paper-297 (MC: 1.20.2) (Implementing API version 1.20.2-R0.1-SNAPSHOT) (Git: 250388d)
+[13:17:18] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[13:17:18] [Server thread/INFO]: Using 4 threads for Netty based IO
+[13:17:19] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
+[13:17:19] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[13:17:19] [Server thread/INFO]: Default game type: SURVIVAL
+[13:17:19] [Server thread/INFO]: Generating keypair
+[13:17:19] [Server thread/INFO]: Starting Minecraft server on *:25565
+[13:17:19] [Server thread/INFO]: Using default channel type
+[13:17:19] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[13:17:19] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[13:17:19] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.108
+[13:17:21] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.0.3
+[13:17:21] [Server thread/INFO]: [OriginPaper] Loading server plugin GenesisMC vmc1.20-v0.2.2
+[13:17:21] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.20.1
+[13:17:21] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.108
+[13:17:22] [Server thread/INFO]:         __    
+[13:17:22] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.108
+[13:17:22] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[13:17:22] [Server thread/INFO]: 
+[13:17:22] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[13:17:22] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[13:17:23] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[13:17:23] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[13:17:23] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1960ms)
+[13:17:23] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.0.3
+[13:17:24] [Server thread/INFO]: [SkinsRestorer] Detected Minecraft v1_20_R2, using PaperSkinRefresher.
+[13:17:24] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[13:17:25] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[13:17:25] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[13:17:25] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[13:17:25] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[13:17:25] [Server thread/INFO]: Preparing level "world"
+[13:17:25] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[13:17:25] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[13:17:25] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[13:17:25] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
+[13:17:25] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[13:17:25] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[13:17:25] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[13:17:25] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Current version: 15.0.3
+[13:17:25] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: aa377c1
+[13:17:25] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
+[13:17:25] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[13:17:29] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[13:17:30] [Server thread/INFO]: Time elapsed: 113 ms
+[13:17:30] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[13:17:30] [Server thread/INFO]: Time elapsed: 64 ms
+[13:17:30] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[13:17:30] [Server thread/INFO]: Time elapsed: 68 ms
+[13:17:30] [Server thread/INFO]: [OriginPaper] Enabling GenesisMC vmc1.20-v0.2.2
+[13:17:31] [Server thread/ERROR]: Error occurred while enabling GenesisMC vmc1.20-v0.2.2 (Is it up to date?)
+java.lang.NoClassDefFoundError: net/skinsrestorer/api/exception/SkinRequestException
+	at me.dueris.genesismc.GenesisMC.start(GenesisMC.java:327) ~[genesis-standalone-mc1.20-v0.2.2.jar:?]
+	at me.dueris.genesismc.GenesisMC.onEnable(GenesisMC.java:192) ~[genesis-standalone-mc1.20-v0.2.2.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:281) ~[paper-api-1.20.2-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:189) ~[paper-1.20.2.jar:git-Paper-297]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:104) ~[paper-1.20.2.jar:git-Paper-297]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:507) ~[paper-api-1.20.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R2.CraftServer.enablePlugin(CraftServer.java:646) ~[paper-1.20.2.jar:git-Paper-297]
+	at org.bukkit.craftbukkit.v1_20_R2.CraftServer.enablePlugins(CraftServer.java:557) ~[paper-1.20.2.jar:git-Paper-297]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:627) ~[paper-1.20.2.jar:git-Paper-297]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:424) ~[paper-1.20.2.jar:git-Paper-297]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:308) ~[paper-1.20.2.jar:git-Paper-297]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1086) ~[paper-1.20.2.jar:git-Paper-297]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:315) ~[paper-1.20.2.jar:git-Paper-297]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ClassNotFoundException: net.skinsrestorer.api.exception.SkinRequestException
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:197) ~[paper-api-1.20.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:164) ~[paper-api-1.20.2-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	... 14 more
+[13:17:31] [Server thread/INFO]: [OriginPaper] Disabling GenesisMC vmc1.20-v0.2.2
+[13:17:31] [Server thread/INFO]: [GenesisMC] GenesisMC disabled.
+[13:17:31] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.1
+[13:17:31] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
+[13:17:31] [Server thread/INFO]: [Essentials] Creating config from template: plugins\Essentials\config.yml
+[13:17:33] [Server thread/WARN]: [Essentials] Missing userdata folder, aborting
+[13:17:33] [Server thread/INFO]: [Essentials] Creating config from template: plugins\Essentials\kits.yml
+[13:17:33] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[13:17:33] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[13:17:33] [Server thread/INFO]: [Essentials] Starting Essentials ban format conversion
+[13:17:33] [Server thread/INFO]: [Essentials] Attempting to migrate ignore list to UUIDs
+[13:17:33] [Server thread/INFO]: [Essentials] Attempting to migrate legacy userdata keys to Configurate
+[13:17:33] [Server thread/INFO]: [Essentials] Creating config from template: plugins\Essentials\worth.yml
+[13:17:33] [Server thread/INFO]: [Essentials] Creating config from template: plugins\Essentials\tpr.yml
+[13:17:34] [Server thread/INFO]: [Essentials] Loaded 39094 items from items.json.
+[13:17:34] [Server thread/INFO]: [Essentials] Creating config from template: plugins\Essentials\custom_items.yml
+[13:17:34] [Server thread/INFO]: [Essentials] Using locale pl_PL
+[13:17:34] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[13:17:34] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[13:17:34] [Server thread/WARN]: [Essentials] Detected supported permissions plugin LuckPerms without Vault installed.
+[13:17:34] [Server thread/WARN]: [Essentials] Features such as chat prefixes/suffixes and group-related functionality will not work until you install Vault.
+[13:17:34] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
+[13:17:34] [Server thread/INFO]: Running delayed init tasks
+[13:17:34] [Server thread/INFO]: Done (16.617s)! For help, type "help"
+[13:17:34] [Craft Scheduler Thread - 2 - Essentials/INFO]: [Essentials] Pobieranie informacji o wersji…
+[13:17:34] [Server thread/INFO]: Timings Reset
+[13:18:42] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /list 
+[13:18:42] [Server thread/INFO]: Na serwerze jest 0 graczy z maksimum 100 online.
